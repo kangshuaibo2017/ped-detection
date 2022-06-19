@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ll_17376141@10.134.33.117:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="ll_17376141@10.134.33.117:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/hdd/ll/yolov3_spp" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
