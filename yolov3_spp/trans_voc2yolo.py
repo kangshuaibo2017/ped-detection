@@ -9,9 +9,8 @@ from lxml import etree
 import json
 import shutil
 
-
 # voc数据集根目录以及版本
-voc_root = "/hdd/ll/VOCdevkit"
+voc_root = "/ksb/VOCdevkit"
 voc_version = "VOC2007"
 
 # 转换的训练集以及验证集对应txt文件
@@ -19,7 +18,7 @@ train_txt = "train.txt"
 val_txt = "val.txt"
 
 # 转换后的文件保存目录
-save_file_root = "/hdd/ll/yolov3_spp/my_yolo_2007_dataset"
+save_file_root = "/ksb/yolov3_spp/my_yolo_2007_dataset"
 
 # label标签对应json文件
 label_json_path = './data/pascal_voc_2007_classes.json'

@@ -3,7 +3,7 @@
 ## 1 环境配置：
 * Python3.6或者3.7
 * Pytorch1.6(注意：必须是1.6.0或以上，因为使用官方提供的混合精度训练1.6.0后才支持)
-* pycocotools(Linux: ```pip install pycocotools```;   
+* pycocotools(Linux: ```pip install pycocotools```;
   Windows: ```pip install pycocotools-windows```(不需要额外安装vs))
 * 更多环境配置信息，请查看```requirements.txt```文件
 * 最好使用GPU训练
@@ -12,11 +12,11 @@
 ```
   ├── cfg: 配置文件目录
   │    ├── hyp.yaml: 训练网络的相关超参数
-  │    └── yolov3-spp.cfg: yolov3-spp网络结构配置 
-  │ 
+  │    └── yolov3-spp.cfg: yolov3-spp网络结构配置
+  │
   ├── data: 存储训练时数据集相关信息缓存
   │    └── pascal_voc_classes.json: pascal voc数据集标签
-  │ 
+  │
   ├── runs: 保存训练过程中生成的所有tensorboard相关文件
   ├── build_utils: 搭建训练网络时使用到的工具
   │     ├── datasets.py: 数据读取以及预处理方法
@@ -48,10 +48,10 @@
 ├── my_yolo_dataset 自定义数据集根目录
 │         ├── train   训练集目录
 │         │     ├── images  训练集图像目录
-│         │     └── labels  训练集标签目录 
+│         │     └── labels  训练集标签目录
 │         └── val    验证集目录
 │               ├── images  验证集图像目录
-│               └── labels  验证集标签目录            
+│               └── labels  验证集标签目录
 ```
 
 ## 4 利用标注好的数据集生成一系列相关准备文件，为了方便我写了个脚本，通过脚本可直接生成。也可参考原作者的[教程](https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data)
@@ -111,8 +111,8 @@ cfg_path = "./cfg/yolov3-spp.cfg"
 * ```yolov3-spp-ultralytics-512.pt```: 链接: https://pan.baidu.com/s/1k5yeTZZNv8Xqf0uBXnUK-g  密码: e3k1
 * ```yolov3-spp-ultralytics-608.pt```: 链接: https://pan.baidu.com/s/1GI8BA0wxeWMC0cjrC01G7Q  密码: ma3t
 * ```yolov3spp-voc-512.pt``` **(这是我在视频演示训练中得到的权重)**: 链接: https://pan.baidu.com/s/1aFAtaHlge0ieFtQ9nhmj3w  密码: 8ph3
- 
- 
+
+
 ## 6 数据集，本例程使用的是PASCAL VOC2012数据集
 * ```Pascal VOC2012``` train/val数据集下载地址：http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
 * 如果不了解数据集或者想使用自己的数据集进行训练，请参考我的bilibili：https://b23.tv/F1kSCK
@@ -130,4 +130,4 @@ cfg_path = "./cfg/yolov3-spp.cfg"
 [https://www.bilibili.com/video/BV1t54y1C7ra](https://www.bilibili.com/video/BV1t54y1C7ra)
 
 ## YOLOv3 SPP框架图
-![yolov3spp](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/raw/master/pytorch_object_detection/yolov3_spp/yolov3spp.png) 
+![yolov3spp](https://github.com/WZMIAOMIAO/deep-learning-for-image-processing/raw/master/pytorch_object_detection/yolov3_spp/yolov3spp.png)
